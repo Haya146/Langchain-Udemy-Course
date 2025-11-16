@@ -32,15 +32,9 @@ It serves as a minimal yet complete example of building local LLM apps.
 
 ## 📸 Demo Preview (Optional)
 
-> Add a screenshot or demo GIF to make your GitHub page stand out.
-
-assets/demo.gif
-
-yaml
-Copy code
 
 <p align="center">
-  <img src="assets/demo.gif" width="700">
+  <img src="assets/demo.png" width="700">
 </p>
 
 ---
@@ -126,3 +120,4 @@ If you like this project, please ⭐ star the repo.
 
 📬 Contact
 For issues, suggestions, or improvements — feel free to open an issue.
+
