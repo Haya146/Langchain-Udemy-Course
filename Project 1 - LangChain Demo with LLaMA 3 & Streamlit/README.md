@@ -1,104 +1,128 @@
-🚀 LangChain Demo with LLaMA 3 & Streamlit
+<h1 align="center">⚡ LangChain Demo with LLaMA 3 & Streamlit</h1>
 
-This repository contains a simple interactive demo built with Streamlit, leveraging LLaMA 3 through Ollama and powered by LangChain for prompt handling and chaining.
-The project also integrates LangSmith for experiment tracing and monitoring.
+<p align="center">
+  A lightweight, local-first AI assistant powered by <b>Ollama</b>, <b>LangChain</b>, and <b>Streamlit</b>.
+</p>
 
-✨ Features
+---
 
-🧠 Uses LLaMA 3 through Ollama
+<!-- BADGES -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" />
+  <img src="https://img.shields.io/badge/LLM-LLaMA3-orange" />
+  <img src="https://img.shields.io/badge/Framework-Streamlit-ff4b4b" />
+  <img src="https://img.shields.io/badge/LangChain-Enabled-green" />
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey" />
+</p>
 
-🔗 Prompt & chain management with LangChain
+---
 
-📊 Built-in tracing via LangSmith
+## 📌 Overview
 
-🎨 Clean and interactive Streamlit UI
+This project demonstrates how to build an interactive AI application using:
 
-⚙️ Simple and extensible project structure
+- **LLaMA 3 (via Ollama)**
+- **LangChain** for prompt management and chaining  
+- **Streamlit** for a clean and responsive UI  
+- **LangSmith** for tracing & debugging  
 
-📦 Requirements
+It serves as a minimal yet complete example of building local LLM apps.
 
-Make sure you have the following before running the project:
+---
 
-Python 3.10+
+## 📸 Demo Preview (Optional)
 
-Ollama installed locally
-Download: https://ollama.com/download
+> Add a screenshot or demo GIF to make your GitHub page stand out.
 
-The LLaMA 3 model pulled locally:
+assets/demo.gif
 
-ollama pull llama3
+yaml
+Copy code
 
-🛠 Installation
+<p align="center">
+  <img src="assets/demo.gif" width="700">
+</p>
 
-Clone the repository:
+---
 
+## 🧠 Features
+
+- Local inference with **Ollama + LLaMA3**
+- Clean prompt–LLM–output chain via **LangChain**
+- Easy UI built with Streamlit
+- Integrated LangSmith logging
+- Fully extensible structure for chatbots, agents, and RAG systems
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone <your-repo-url>
-cd <project-folder>
+cd <your-project-folder>
+```
 
-
-Install dependencies:
-
+2️⃣ Install Dependencies
+```
 pip install -r requirements.txt
+```
+3️⃣ Install Ollama + LLaMA3
+Download Ollama:
+https://ollama.com/download
 
-
-If you don’t have a requirements file yet, use:
-
-pip install streamlit langchain langchain-community python-dotenv
-
-🔐 Environment Variables
-
-Create a .env file in the project root and add:
-
+Pull the model:
+```
+ollama pull llama3
+```
+4️⃣ Create a .env File
+```
 LANGCHAIN_API_KEY=your_langchain_api_key
 LANGCHAIN_PROJECT=your_project_name
-
-
-These enable LangSmith tracing.
-
-▶️ Run the Application
-
-Start Streamlit:
-
+```
+5️⃣ Run the App
+```
 streamlit run app.py
-
-
-Make sure your Python file is named app.py, or update the command accordingly.
-
-🧠 How It Works
-
-The app uses:
-
-ChatPromptTemplate to build dynamic prompts
-
-Ollama(LLaMA3) as the local LLM
-
-StrOutputParser to clean LLM output
-
-A simple LangChain pipeline:
-
-chain = prompt | llm | output_parser
-response = chain.invoke({"question": input_text})
-
-
-Streamlit displays the result to the user in real time.
-
-📁 Project Structure (Suggested)
+```
+🧩 Code Structure
+```
 .
 ├── app.py
 ├── .env
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── assets/
+     ├── banner.png
+     └── demo.gif
 
-🎯 Usage
+```
 
-Open the Streamlit UI
+🧠 Core Chain Example
+```
 
-Enter any question in the text box
+chain = prompt | llm | output_parser
+response = chain.invoke({"question": input_text})
+```
 
-LLaMA 3 generates and displays the answer
+🛠 Technologies Used
+Python 3.10+
+Streamlit
+LangChain
+LangChain Community
+Ollama
+LLaMA 3
+dotenv
+LangSmith
 
-Logs and traces appear in LangSmith
+---
 
 📜 License
+This project is licensed under the MIT License.
 
-This project is open-source. You may modify and use it freely.
+⭐ Contributing
+Pull requests are welcome!
+If you like this project, please ⭐ star the repo.
+
+📬 Contact
+For issues, suggestions, or improvements — feel free to open an issue.
